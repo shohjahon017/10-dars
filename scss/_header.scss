@@ -1,0 +1,13 @@
+.header__container {
+  color: rgba(51, 51, 51, 1);
+
+  height: 59px;
+  border-radius: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b152b;
+  .logo {
+    width: 173px;
+  }
+}

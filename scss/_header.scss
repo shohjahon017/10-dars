@@ -1,13 +1,76 @@
 .header__container {
-  color: rgba(51, 51, 51, 1);
-
-  height: 59px;
-  border-radius: 47px;
+  width: 1440px;
+  height: 85px;
+  padding: 15px 135px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1b152b;
+  text-align: center;
+  background-color: rgba(243, 251, 246, 1);
+  background-position: inherit;
+  position: fixed;
   .logo {
     width: 173px;
   }
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+  .header-div {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .sign {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    a {
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: rgba(51, 51, 51, 1);
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+  .header__btn {
+    width: 190px;
+    height: 55px;
+    border-radius: 4px;
+    font-family: "Poppins";
+    display: flex;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(19, 171, 78, 1);
+    &:hover {
+      background-color: rgb(30, 83, 50);
+      color: rgba(255, 247, 247);
+    }
+  }
+}
+.nav {
+  a {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    color: rgba(51, 51, 51, 1);
+    transition: all 0.5s;
+    &:hover {
+      color: rgb(186, 58, 35);
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
 }

@@ -8,9 +8,9 @@
   text-align: center;
   background-color: rgba(243, 251, 246, 1);
   background-size: 100%;
-  position: fixed;
-  margin: 0 auto;
-  left: 123px;
+  // position: fixed;
+  // margin: 0 auto;
+  // left: 123px;
 
   .logo {
     width: 173px;
@@ -130,11 +130,13 @@
 @media screen and (max-width: 768px) {
   .header__container {
     width: 720px;
+    position: relative;
+    position: fixed;
 
     .logo {
       width: 50px;
-      margin-left: -20px;
-      margin-right: 90px;
+      margin-left: 0px;
+      margin-right: 80px;
     }
     ul {
       gap: 20px;
@@ -143,10 +145,19 @@
     .header-div {
       gap: 25px;
       display: none;
+      position: absolute;
+      display: none;
+      width: 100%;
+      top: 60px;
+      left: 70%;
     }
     .menu {
       display: block;
+      position: absolute;
+      left: 16px;
+      top: 30px;
     }
+
     .person1 {
       display: block;
     }
@@ -154,8 +165,83 @@
   #check1:checked ~ .header-div {
     display: block;
   }
-  #check:checked ~ .nav {
+  #check:checked ~ .nav ul {
     display: block;
+    position: absolute;
+    left: 10px;
+    top: 90%;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid green;
+    background-color: rgba(243, 251, 246, 1);
+    &:hover {
+      background-color: rgb(140, 202, 164);
+      color: green;
+    }
+  }
+  .header__btn {
+    width: 100px;
+    height: 55px;
+    border-radius: 4px;
+    font-family: "Poppins";
+    display: flex;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header__container {
+    width: 375px;
+    position: relative;
+    position: fixed;
+
+    .logo {
+      width: 50px;
+      display: flex;
+      margin-left: 70px;
+    }
+    ul {
+      display: none;
+    }
+    .header-div {
+      gap: 25px;
+      display: none;
+      position: absolute;
+      display: none;
+      width: 100%;
+      top: 60px;
+      left: 65%;
+    }
+    .menu {
+      display: block;
+      position: absolute;
+      left: 16px;
+      top: 30px;
+    }
+
+    .person1 {
+      margin-right: 30px;
+      display: block;
+    }
+  }
+  #check1:checked ~ .header-div {
+    display: block;
+  }
+  #check:checked ~ .nav ul {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 90%;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid green;
+    background-color: rgba(243, 251, 246, 1);
+    &:hover {
+      background-color: rgb(140, 202, 164);
+      color: green;
+    }
   }
   .header__btn {
     width: 100px;

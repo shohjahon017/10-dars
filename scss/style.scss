@@ -13,3 +13,44 @@
   width: 100%;
   margin: 0 auto;
 }
+#check1 {
+  display: none;
+}
+.person1 {
+  display: none;
+}
+#check {
+  display: none;
+}
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 540px) {
+  .container {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
